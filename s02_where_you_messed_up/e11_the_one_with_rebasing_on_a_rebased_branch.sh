@@ -34,7 +34,7 @@ git commit -qam "Add lyrics"
 echo "+ Add a few commits on main"
 for i in {1..5}
 do
-  echo -e "add $i line\r" >> ./$file1
+  echo -e "add $i line" >> ./$file1
   git commit -qam "add change $i"
 done
 
@@ -44,19 +44,19 @@ git checkout -qb feature1
 cp $filepath/$file2 .
 git add $file2
 git commit -qm "f1: add swedish twinkle"
-echo -e "National anthem material!\r" >> $file2
+echo -e "National anthem material!" >> $file2
 git add $file2
 git commit -qm "f1: add opinion"
-echo -e "Really awesome song!\r" >> $file2
+echo -e "Really awesome song!" >> $file2
 git add $file2
 git commit -qm "f1: add second opinion"
 
 git checkout -qb feature2
 touch $file3
-echo -e "This repo is awesome\r" >> $file3
+echo -e "This repo is awesome" >> $file3
 git add $file3
 git commit -qm "f2: add readme"
-echo -e "This repo is really awesome\r" >> $file3
+echo -e "This repo is really awesome" >> $file3
 git add $file3
 git commit -qm "f2: improve readme"
 
@@ -66,7 +66,7 @@ echo "+ Add a few more commits on main"
 echo
 for i in {6..10}
 do
-  echo -e "add $i line\r" >> ./$file1
+  echo -e "add $i line" >> ./$file1
   git commit -qam "add change $i"
 done
 

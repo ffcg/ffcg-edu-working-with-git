@@ -33,7 +33,7 @@ git commit -qam "Add lyrics"
 echo "+ Add a few commits on main"
 for i in {1..5}
 do
-  echo -e "add $i line\r" >> ./$file1
+  echo -e "add $i line" >> ./$file1
   git commit -qam "add change $i"
 done
 
@@ -44,15 +44,15 @@ cp $filepath/$file2 .
 git add $file2
 git commit -qm "f1: add swedish twinkle"
 
-echo -e "National anthem material!\r" >> $file2
+echo -e "National anthem material!" >> $file2
 git add $file2
 git commit -qm "f1: add opinion"
 
-echo -e "Really awesome song!\r" >> $file2
+echo -e "Really awesome song!" >> $file2
 git add $file2
 git commit -qm "f1: add second opinion"
 
-echo -e "But is it really that good?\r" >> $file2
+echo -e "But is it really that good?" >> $file2
 git add $file2
 git commit -qm "f1: add second thoughts"
 
@@ -66,7 +66,7 @@ echo "+ Add a few more commits on main"
 echo
 for i in {6..10}
 do
-  echo -e "add $i line\r" >> ./$file1
+  echo -e "add $i line" >> ./$file1
   git commit -qam "add change $i"
 done
 
