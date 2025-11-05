@@ -26,11 +26,11 @@ git commit -qm "initial commit"
 
 echo "+ Update files"
 sed -b -i '2s/what/who/' $file1
-echo -e "add 1" >> $file2
+echo "add 1" >> $file2
 git commit -qam "update 1"
 sed -b -i '17s/He/She/' $file1
-echo -e "add 2" >> $file2
+echo "add 2" >> $file2
 git commit -qam "update 2"
 sed -b -i '34s/what/who/' $file1
-echo -e "add 3" >> $file2
+echo "add 3" >> $file2
 git commit -qam "update 3"
