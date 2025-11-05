@@ -27,8 +27,8 @@ git commit -qm "Initial commit"
 
 echo "+ Make changes to $file1"
 sed -b -i '2s/what/who/' $file1
-sed -b -i '16s/.*/Thanks you for your tiny car,\r/' $file1
-sed -b -i '17s/.*/He does not want to see you anymore,\r/' $file1
-sed -b -i '18s/.*/If you did not blinkat so.\r/' $file1
-sed -b -i '20s/.*/Yet another change.\r/' $file1
+sed -b -i '16s/.*/Thanks you for your tiny car,/' $file1
+sed -b -i '17s/.*/He does not want to see you anymore,/' $file1
+sed -b -i '18s/.*/If you did not blinkat so./' $file1
+sed -b -i '20s/.*/Yet another change./' $file1
 cp $filepath/$file2 .
